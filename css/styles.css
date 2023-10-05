@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sanchez&display=swap');
+
+:root {
+    --sanchezfont: 'Sanchez', serif;
+    --abrilfont: 'Abril Fatface', cursive;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #DDCEB5;
+}
+
+.fondo {
+    background-color: #c2b7a4;
+    background-size: cover;
+    width: 99vw;
+    height: max-content;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.title {
+    font-family: var(--abrilfont);
+    font-size: 40px;
+    color: #332E2B;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.title p {
+    color: #fff;
+    font-size: 30px;
+}
+
+hr {
+    border: 1px solid #332E2B;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+.center {
+    font-family: var(--sanchezfont);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 13px;
+}
+
+.navegacion ul {
+    list-style: none;
+    display: flex;
+}
+
+.navegacion ul li a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #616161;
+}
+
+.about {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+    justify-content: flex-end;
+}
+
+.about .texto {
+    width: 57vw;
+    font-family: var(--sanchezfont);
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.about .texto p {
+    text-align: justify;
+    line-height: 2;
+    color: #616161;
+    margin-top: 20px;
+    margin-bottom: 230px;
+}
+
+.about .texto p::first-letter {
+    font-size: 70px;
+    float: left;
+    line-height: 2;
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+
+
+.proyecto1 p::first-letter,
+.proyecto2 p::first-letter {
+    font-size: 70px;
+    float: left;
+    line-height: 2;
+    margin-top: -55px;
+    margin-bottom: -50px;
+}
+
+.about .texto h2,
+p {
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: var(--sanchezfont);
+    text-align: center;
+}
+
+.curriculum {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.curriculum p {
+    font-family: var(--sanchezfont);
+    color: #616161;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 44px;
+}
+
+.curriculum p::first-letter {
+    font-size: 70px;
+    line-height: 1;
+    float: none;
+}
+
+.proyectos {
+    margin-top: 20px;
+}
+
+.proyecto1 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+    justify-content: space-around;
+}
+
+.proyecto1 img {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.proyecto1 .grtexto .texto {
+    padding: 40px;
+    color: #616161;
+    text-align: justify;
+}
+
+h3 {
+    text-align: center;
+}
+
+.proyecto1 .grtexto,
+.proyecto2 .grtexto {
+    font-family: var(--sanchezfont);
+}
+
+a {
+    text-decoration: none;
+    color: #332E2B;
+}
+
+.proyecto2 {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.proyecto2 img {
+    margin: 80px
+}
+
+.proyecto2 .grtexto .texto {
+    padding: 40px;
+    color: #616161;
+}
+
+.proyecto2 .grtexto .texto a {
+    text-align: right;
+}
+
+.proyecto2 .grtexto p,
+.proyecto1 .grtexto p {
+    text-align: justify;
+}
+
+.certifica {
+    margin-top: 20px;
+    display: grid;
+}
+
+.certifica table {
+    text-align: justify;
+    font-family: var(--sanchezfont);
+    padding: 40px;
+}
+
+.certifica table th {
+    background-color: #332E2B;
+    color: #c2b7a4;
+}
+
+.formu {
+    display: flex;
+    justify-content: center;
+}
+
+.formu form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cont form input {
+    margin-top: 20px;
+    font-family: var(--sanchezfont);
+}
+
+
+.propio p::first-letter {
+    font-size: 70px;
+    line-height: 1;
+    float: none;
+}
+
+.propio p {
+    font-family: var(--sanchezfont);
+    color: #616161;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 44px;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: var(--sanchezfont);
+}
+
+.float-button {
+    text-decoration: none;
+    position: fixed;
+    padding: 10px;
+    bottom: 30px;
+    right: 30px;
+    color: #050505;
+    border-radius: 25px 30px 5px 25px;
+    z-index: 100;
+    font-family: Arial;
+    font-size: 50px;
+}
+
