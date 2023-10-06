@@ -1,10 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sanchez&display=swap');
 
 :root {
+    /* Colors */
+    --primary-bg-color: #DDCEB5;
+    --secondary-bg-color: #c2b7a4;
+    --text-color: #332E2B;
+    --text-secondary-color: #616161;
+
+    /* Fonts */
     --sanchezfont: 'Sanchez', serif;
     --abrilfont: 'Abril Fatface', cursive;
-}
 
+    /* Font Sizes */
+    --title-font-size: 40px;
+    --subtitle-font-size: 30px;
+    --heading-font-size: 50px;
+    --paragraph-font-size: 20px;
+
+    /* Spacing */
+    --margin: 10px;
+    --padding: 10px;
+    --margin-large: 20px;
+    --padding-large: 20px;
+}
 
 * {
     margin: 0;
@@ -14,46 +32,44 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: #DDCEB5;
+    background-color: var(--primary-bg-color);
 }
 
 .fondo {
-    background-color: #c2b7a4;
+    background-color: var(--secondary-bg-color);
     background-size: cover;
     width: 99vw;
     height: max-content;
-    margin: 10px;
+    margin: var(--margin);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .title {
     font-family: var(--abrilfont);
-    font-size: 40px;
-    color: #332E2B;
-    padding: 10px;
+    font-size: var(--title-font-size);
+    color: var(--text-color);
+    padding: var(--padding);
     text-align: center;
-    margin: 10px;
-
+    margin: var(--margin);
 }
 
 .title p {
     color: #fff;
-    font-size: 30px;
+    font-size: var(--subtitle-font-size);
 }
 
 hr {
-    border: 1px solid #332E2B;
-    margin-left: 40px;
-    margin-right: 40px;
+    border: 1px solid var(--text-color);
+    margin-left: var(--margin-large);
+    margin-right: var(--margin-large);
 }
-
 
 .center {
     font-family: var(--sanchezfont);
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-    padding-left: 20px;
+    margin: var(--margin-large);
+    padding-left: var(--padding-large);
     padding-right: 13px;
 }
 
@@ -65,28 +81,28 @@ hr {
 .navegacion ul li a {
     margin-right: 10px;
     text-decoration: none;
-    color: #616161;
+    color: var(--text-secondary-color);
 }
 
 .about {
     display: flex;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: var(--margin-large);
+    margin-left: var(--margin-large);
     justify-content: flex-end;
 }
 
 .about .texto {
     width: 57vw;
     font-family: var(--sanchezfont);
-    margin-right: 40px;
+    margin-right: var(--margin-large);
     margin-left: 20px;
 }
 
 .about .texto p {
     text-align: justify;
     line-height: 2;
-    color: #616161;
-    margin-top: 20px;
+    color: var(--text-secondary-color);
+    margin-top: var(--margin-large);
     margin-bottom: 230px;
 }
 
@@ -97,7 +113,6 @@ hr {
     margin-top: -40px;
     margin-bottom: -40px;
 }
-
 
 .proyecto1 p::first-letter,
 .proyecto2 p::first-letter {
@@ -114,21 +129,21 @@ p {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: var(--heading-font-size);
     font-family: var(--sanchezfont);
     text-align: center;
 }
 
 .curriculum {
     text-align: center;
-    margin-top: 20px;
+    margin-top: var(--margin-large);
 }
 
 .curriculum p {
     font-family: var(--sanchezfont);
-    color: #616161;
+    color: var(--text-secondary-color);
     text-align: left;
-    margin-left: 40px;
+    margin-left: var(--margin-large);
     margin-bottom: 44px;
 }
 
@@ -139,24 +154,24 @@ h2 {
 }
 
 .proyectos {
-    margin-top: 20px;
+    margin-top: var(--margin-large);
 }
 
 .proyecto1 {
     display: flex;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: var(--margin-large);
+    margin-left: var(--margin-large);
     justify-content: space-around;
 }
 
 .proyecto1 img {
-    margin-right: 40px;
-    margin-bottom: 40px;
+    margin-right: var(--margin-large);
+    margin-bottom: var(--margin-large);
 }
 
 .proyecto1 .grtexto .texto {
-    padding: 40px;
-    color: #616161;
+    padding: var(--padding-large);
+    color: var(--text-secondary-color);
     text-align: justify;
 }
 
@@ -171,22 +186,22 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #332E2B;
+    color: var(--text-color);
 }
 
 .proyecto2 {
     display: flex;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: var(--margin-large);
+    margin-left: var(--margin-large);
 }
 
 .proyecto2 img {
-    margin: 80px
+    margin: 80px;
 }
 
 .proyecto2 .grtexto .texto {
-    padding: 40px;
-    color: #616161;
+    padding: var(--padding-large);
+    color: var(--text-secondary-color);
 }
 
 .proyecto2 .grtexto .texto a {
@@ -199,19 +214,19 @@ a {
 }
 
 .certifica {
-    margin-top: 20px;
+    margin-top: var(--margin-large);
     display: grid;
 }
 
 .certifica table {
     text-align: justify;
     font-family: var(--sanchezfont);
-    padding: 40px;
+    padding: var(--padding-large);
 }
 
 .certifica table th {
-    background-color: #332E2B;
-    color: #c2b7a4;
+    background-color: var(--text-color);
+    color: var(--secondary-bg-color);
 }
 
 .formu {
@@ -223,16 +238,15 @@ a {
     display: flex;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-    padding: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: var(--padding-large);
+    margin-top: var(--margin-large);
+    margin-bottom: var(--margin-large);
 }
 
 .cont form input {
-    margin-top: 20px;
+    margin-top: var(--margin-large);
     font-family: var(--sanchezfont);
 }
-
 
 .propio p::first-letter {
     font-size: 70px;
@@ -242,15 +256,15 @@ a {
 
 .propio p {
     font-family: var(--sanchezfont);
-    color: #616161;
+    color: var(--text-secondary-color);
     text-align: left;
-    margin-left: 40px;
+    margin-left: var(--margin-large);
     margin-bottom: 44px;
 }
 
 footer {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: var(--margin-large);
+    margin-bottom: var(--margin-large);
 }
 
 footer p {
@@ -269,4 +283,3 @@ footer p {
     font-family: Arial;
     font-size: 50px;
 }
-
